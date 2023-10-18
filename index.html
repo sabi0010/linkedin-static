@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LinkedIn </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media_query.css">
+    <link rel="stylesheet" href="css/navigation_bar.css">
+    <link rel="stylesheet" href="css/left_panel.css">
+    <link rel="stylesheet" href="css/middle_panel.css"> 
+    <link rel="stylesheet" href="css/right_panel.css">
+    <script src="https://kit.fontawesome.com/7748f3a2f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- LinkedIn Navigation Bar starts here -->
+
+    <header>
+        <nav>
+            <!-- Navigation Bar starts here -->
+
+            <div id="navigation-bar">
+                <div id="logo">
+                    <img src="logo/linkedin.png" alt="LinkedIn logo" title="LinkedIn">
+                </div>
+                <div id="search-bar">
+                    <input type="text" name="search_bar" placeholder="Search">
+                </div>
+
+                <!-- Navigation Menu starts here -->
+
+                <div id="navigation-menu">
+                    <div class="nav-icon" id="search-icon" onclick="openSearch()">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                    <!-- Home -->
+
+                    <div class="nav-icon active" id="home">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <span> Home </span>
+                    </div>
+
+                    <!-- My Network -->
+
+                    <div class="nav-icon" id="network">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span> My Network </spa>
+                    </div>
+
+                    <!-- My Jobs -->
+
+                    <div class="nav-icon" id="jobs">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span> Jobs </span>
+                    </div>
+
+                    <!-- Messaging -->
+
+                    <div class="nav-icon" id="messaging">
+                        <i class="fa-solid fa-message"></i>
+                        <span> Messaging </span>
+                    </div>
+
+                    <!-- Notifications -->
+
+                    <div class="nav-icon" id="notifications">
+                        <i class="fa-solid fa-bell"></i>
+                        <span> Notifications </span>
+                    </div>
+
+                    <!-- About Me -->
+
+                    <div class="nav-icon" id="myself">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <div>
+                            <span> Me </span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+
+                    <div id="divider"></div>
+
+                    <!-- For Business -->
+
+                    <div class="nav-icon" id="business">
+                        <i class="fa-solid fa-grip"></i>
+                        <div>
+                            <span> For Business </span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+
+                    <!-- Premium -->
+
+                    <div id="premium">
+                        <a href="#"> Try Premium for free </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- LinkedIn Body starts here -->
+
+    <div id="content">
+
+        <!-- Left Panel starts here -->
+
+        <div id="left-panel">
+
+            <!-- Profile Information Section -->
+
+            <div class="property">
+                <img src="pics/background.jpg" alt="background" id="background">
+                <img src="logo/profile.jpg" alt="profile pic" id="profile-pic" title="Sarbhjeet Singh">
+                <div id="name"> Sarbhjeet Singh </div>
+                <div id="position"> Web Developer </div>
+
+                <!-- Connections -->
+
+                <div class="section" id="connections">
+                    <span>
+                        <span id="connection-1"> Connections<span id="connections-no">128</span>
+                    </span>
+                        <span id="connection-2"> Grow your network</span>
+                    </span>
+                    
+                </div>
+
+                <!-- Premium -->
+
+                <div class="section" id="promotion">
+                    <span> Access exclusive tools & insights </span>
+                    <a href="#"> Try Premium for free </a>
+                </div>
+
+                <!-- My items -->
+
+                <div class="section" id="my-items">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span> My items </span>
+                </div>
+            </div>
+
+            <!-- My Topics section -->
+
+            <div class="property" id="my-topics">
+                <div id="links">
+                    <div> <a href="#"> Groups </a> </div>
+                    <div>
+                        <a href="#"> Events </a>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div> <a href="#"> Followed Hashtags </a> </div>
+                </div>
+                <div id="discover"> Discover more </div>
+            </div>
+        </div>
+
+        <!-- Middle Panel starts here -->
+
+        <div id="middle-panel">
+
+            <!-- Make a Post Section -->
+
+            <div class="property" id="post-section">
+                <div id="write-post">
+                    <img src="logo/profile.jpg" alt="profile-pic" title="Anshu Kumar Singh">
+                    <input type="text" name="_textarea" id="text-area" placeholder="Start a post">
+                </div>
+
+                <!-- Attachments -->
+
+                <div id="attachments">
+                    <div id="photo">
+                        <i class="fa-solid fa-image"></i>
+                        <span> Media </span>
+                    </div>
+                   
+                    <div id="event">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span> Event </span>
+                    </div>
+                    <div id="article">
+                        <i class="fa-solid fa-newspaper"></i>
+                        <span> Write article </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sorting options -->
+
+            <div id="sort-option">
+                <div id="horizontal-divider"></div>
+                <div id="sort-by"> Sort by: </div>
+                <div id="sort-type"> Top </div>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <!-- 1st LinkedIn Post starts here -->
+
+            <div class="property" id="post-1">
+
+                <!-- Username, Display Picture, Followers & Days posted ago -->
+
+                <div class="user">
+                    <div>
+                        <img src="logo/linkedin.png" alt="google" title="google" id="google">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name"> Linkedin </div>
+                        <div class="user-followers"> 28,472,796 followers </div>
+                        <div class="posted-ago">
+                            <span> 1w </span>
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                    </div>
+`                    <div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+
+                <!-- Description about the post  -->
+
+                <div class="description">
+                    Discover how AI is reshaping the workplace using insights from over 950 
+                    million professionals. We'll guide you through AI trends by industry, 
+                    helping you pinpoint job opportunities and learn vital skills.
+                    <span class="hashtag"> https://lnkd.in/AI-at-Work #AIinWork </span>               </div>
+
+                <!-- pics used in the post -->
+
+                <div id="post-pics">
+                    <div>
+                        <img src="pics/i1.jpg" alt="i1" title="i-1" id="i1">
+                    </div>
+                    <div>
+                        <img src="pics/i2.jpg" alt="i2" title="i2" id="i2">
+                        <img src="pics/i3.jpg" alt="i3" title="i3" id="i3">
+                        <img src="pics/i4.jpg" alt="i4" title="i4" id="i4">
+                    </div>
+                </div>
+
+                <!-- Reactions  -->
+
+                <div id="reactions">
+                    <img src="svg/like.svg" alt="like" title="like" id="like">
+                    <img src="svg/empathy.svg" alt="empathy" title="empathy" id="empathy">
+                    <img src="svg/praise.svg" alt="praise" title="praise" id="praise">
+                    <div class="reaction-number">
+                        <div class="reaction-number"> 26,474 </div>
+                        <div class="comments-reposts">
+                            <div class="comments"> 376 comments </div>
+                            <i class="fa-solid fa-circle"></i>
+                            <div class="reposts"> 527 reposts </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="divider-2"> <div></div> </div>
+
+                <!-- Like Buttons -->
+
+                <div id="reaction-button">
+                    <div>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span> Like </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment"></i>
+                        <span> Comment </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-retweet"></i>
+                        <span> Repost </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span> Send </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2nd LinkedIn Post starts here  -->
+            
+
+            <div class="property" id="post-2">
+
+                <!-- Username, Display Picture, Followers & Days posted ago -->
+
+                <div class="user">
+                    <div>
+                        <img src="logo/testbook.jpg" alt="testbook" title="testbook" id="testbook">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name"> Testbook </div>
+                        <div class="user-followers"> 188,695 followers </div>
+                        <div class="posted-ago">
+                            <span> 1w </span>
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+
+                <!-- Description about the post -->
+
+                <div class="description">
+                    <div>
+                        Happy World Teacher's Day! 📚
+
+                        Today, we celebrate the incredible educators who inspire, empower, and shape the minds of tomorrow. Your dedication and passion for teaching make a lasting impact on countless lives. 🎇
+                        
+                        At Testbook, we're privileged to support and collaborate with educators around the globe. Together, we're shaping the future of education, innovating, and creating meaningful learning experiences for students everywhere. 🤗
+                        
+                        To all the teachers who go above and beyond, thank you for your commitment and for making a difference in the world🌟                    </div>
+                    <span class="hashtag">
+                        #WorldTeachersDay #GratefulTeachers                     </span>
+                </div>
+
+
+                <div id="reactions">
+                    <img src="svg/like.svg" alt="like" title="like" id="like">
+                    <img src="svg/empathy.svg" alt="empathy" title="empathy" id="empathy">
+                    <img src="svg/praise.svg" alt="praise" title="praise" id="praise">
+                    <div class="reaction-number">
+                        <div class="reaction-number"> 18,329 </div>
+                        <div class="comments-reposts">
+                            <div class="comments"> 420 comments </div>
+                            <i class="fa-solid fa-circle"></i>
+                            <div class="reposts"> 431 reposts </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="divider-2"> <div></div> </div>
+
+                <!-- Like, Comment, Repost, Send Buttons -->
+
+                <div id="reaction-button">
+                    <div>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span> Like </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment"></i>
+                        <span> Comment </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-retweet"></i>
+                        <span> Repost </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span> Send </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel starts here  -->
+
+        <div id="right-panel">
+
+            <!-- LinkedIn News Section -->
+
+            <div class="property" id="news-section">
+
+                <!-- LinkedIn News -->
+
+                <div id="news-heading">
+                    <span> LinkedIn News </span>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+
+                <!-- News start -->
+
+                <div id="news">
+                    <div id="news-1">
+                        <div class="news-info">
+                            <i class="fa-solid fa-circle"></i>
+                            <span> Israel-Hamas war: Latest updates  </span>
+                        </div>
+                        <div class="reader-info">
+                            <span> 1d ago </span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span> 15,047 readers </span>
+                        </div>
+                    </div>
+
+
+                    <div id="news-2">
+                        <div class="news-info">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Israel-Hamas war impact on India </span>
+                        </div>
+                        <div class="reader-info">
+                            <span> 1d ago </span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span> 1,438 readers </span>
+                        </div>
+                    </div>
+
+
+                    <div id="news-3">
+                        <div class="news-info">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Cricket returns to olympics </span>
+                        </div>
+                        <div class="reader-info">
+                            <span> 1d ago </span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span> 1,421 readers </span>
+                        </div>
+                    </div>
+
+                    <div id="news-4">
+                        <div class="news-info">
+                            <i class="fa-solid fa-circle"></i>
+                            <span> IT giants record profit rise</span>
+                        </div>
+                        <div class="reader-info">
+                            <span> 2d ago </span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span> 2,769 readers </span>
+                        </div>
+                    </div>
+
+
+                    <div id="news-5">
+                        <div class="news-info">
+                            <i class="fa-solid fa-circle"></i>
+                            <span> Smaller cities lead festive buying </span>
+                        </div>
+                        <div class="reader-info">
+                            <span> 3d ago </span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span> 1,456 readers </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- news ended here  -->
+
+                <!-- show more button -->
+
+                <div id="show-more">
+                    <span> Show more </span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+
+            <!-- Add to Your Feed Section -->
+
+            <div class="property" id="follow-more">
+                <div id="news-heading">
+                    <span> Add to your feed </span>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+
+                <!-- Amazon-->
+
+                <div class="companies">
+                    <div>
+                        <img src="logo/amazon.jpg" alt="Amazon" title="Amazon">
+                    </div>
+                    <div>
+                        <div class="company-name"> Amazon </div>
+                        <div class="company-role">
+                            Software Development 
+                        </div>
+                        <div class="company-followers"> 8M followers </div>
+                    </div>
+                </div>
+
+                <!-- Follow Button -->
+
+                <div class="follow-button-container">
+                    <button class="follow-button">
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <span> Follow </span>
+                        </div>
+                    </button>
+                </div>
+
+                <div id="company-divider"> <div></div> </div>
+
+                <!-- deloitte -->
+
+                <div class="companies">
+                    <div>
+                        <img src="logo/deloitte.jpg" alt="deloitte" title="deloitte">
+                    </div>
+                    <div>
+                        <div class="company-name"> Deloitte </div>
+                        <div class="company-role">
+                            Business Consulting
+                        </div>
+                        <div class="company-followers"> 5M followers </div>
+                    </div>
+                </div>
+
+                <!-- Follow Button -->
+
+                <div class="follow-button-container">
+                    <button class="follow-button">
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <span> Follow </span>
+                        </div>
+                    </button>
+                </div>
+
+                <div id="company-divider"> <div></div> </div>
+
+                <!-- Meta -->
+
+                <div class="companies">
+                    <div>
+                        <img src="logo/meta.jpg" alt="Meta" title="Meta">
+                    </div>
+                    <div>
+                        <div class="company-name"> Meta </div>
+                        <div class="company-role">
+                            Software Development
+                        </div>
+                        <div class="company-followers"> 10M followers </div>
+                    </div>
+                </div>
+
+                <!-- Follow Button -->
+
+                <div class="follow-button-container">
+                    <button class="follow-button">
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <span> Follow </span>
+                        </div>
+                    </button>
+                </div>
+
+                <div id="company-divider"> <div></div> </div>
+
+                <!-- Netflix -->
+
+                <div class="companies">
+                    <div>
+                        <img src="logo/netflix.jpg" alt="Netflix" title="Netflix">
+                    </div>
+                    <div>
+                        <div class="company-name"> Netflix </div>
+                        <div class="company-role">
+                            Entertainment Providers
+                        </div>
+                        <div class="company-followers"> 10M followers </div>
+                    </div>
+                </div>
+
+                <!-- Follow Button -->
+
+                <div class="follow-button-container">
+                    <button class="follow-button">
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <span> Follow </span>
+                        </div>
+                    </button>
+                </div>
+
+                <div id="company-divider"> <div></div> </div>
+
+                <!-- Spotify -->
+
+                <div class="companies">
+                    <div>
+                        <img src="logo/spotify.jpg" alt="Spotify" title="Spotify">
+                    </div>
+                    <div>
+                        <div class="company-name"> Spotify </div>
+                        <div class="company-role">
+                            Musicians Stockholm, Stockholm County
+                        </div>
+                        <div class="company-followers"> 3M followers </div>
+                    </div>
+                </div>
+
+                <!-- Follow Button -->
+
+                <div class="follow-button-container">
+                    <button class="follow-button">
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <span> Follow </span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
